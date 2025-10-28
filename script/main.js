@@ -26,7 +26,7 @@ nav_expand_btn.addEventListener("click", () => {
     if (nav_expand_btn.children[1].style.opacity != "0") {
 
         nav_expand_btn.children[1].style.opacity = "0";
-        mobileNavExtraCard.style.height = "400px";
+        mobileNavExtraCard.style.height = "460px";
         nav_expand_btn.children[0].style.transform = "rotate(45deg)translateX(4.5px)translateY(4.5px)";
         nav_expand_btn.children[2].style.transform = "rotate(-45deg)translateX(4.5px)translateY(-4.5px)";
     } else {
@@ -36,5 +36,6 @@ nav_expand_btn.addEventListener("click", () => {
         nav_expand_btn.children[0].style.transform = "rotate(0)translateX(0)translateY(0)";
         nav_expand_btn.children[2].style.transform = "rotate(0)translateX(0)translateY(0)";
     }
+
 
 })
