@@ -1,0 +1,431 @@
+/* Here is the css code to manage the main index.html page styling */
+
+/* Here is the list of variables in CSS to customer entire website at finger tips. */
+
+:root {
+    --body-bg: rgb(0, 35, 44);
+    --paragraph: 16px;
+    --button-text: 16px;
+    --h1: 26px;
+    --h2: 24px;
+    --h3: 22px;
+    --h4: 20px;
+    --text-color: white;
+    --nav-non-transparent-bg: rgb(2 19 26);
+    --nav-transparent-bg: rgba(0, 0, 0, 0.436);
+    --nav-button-hover: rgb(119, 119, 119);
+    --teal-text-color: rgb(0, 238, 238);
+    --footer-text-size: 14px;
+}
+
+/* Universal Classes */
+.h1{
+    font-size: var(--h1);
+}
+.h2{
+    font-size: var(--h2);
+}
+.h3{
+    font-size: var(--h3);
+}
+.h4{
+    font-size: var(--h4);
+}
+.p{
+    font-size: var(--paragraph);
+}
+.hr{
+    width: 40%;
+    height: 2px;
+    margin: 20px 0;
+    background-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: monospace; */
+    font-family: "fira Code", monospace;
+    color: var(--text-color);
+    position: relative;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    font-size: var(--paragraph);
+}
+
+body {
+    background-color: var(--body-bg);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    /* background-color: rgba(0, 0, 0, 0.436); */
+    background-color: rgba(0, 0, 0, 0.641);
+    z-index: 5;
+}
+
+.navLinksContainers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navLinks1Container {
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+#navLinks2Container {
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+#nav-expand-btn {
+    /* padding: 5px 10px; */
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: none;
+    height: 30px;
+    border-radius: 3px;
+    width: 30px;
+    position: absolute;
+    right: 20px;
+    transform: rotate(0deg);
+    z-index: 8;
+    zoom: 120%;
+    /* transition-duration: 1s; */
+}
+
+#nav-expand-btn:active {
+    background-color: var(--teal-text-color);
+}
+
+#nav-expand-btn>div {
+    transition-duration: 1s;
+    background-color: white;
+    width: 70%;
+    height: 3px;
+    margin: 3px auto;
+    position: absolute;
+    opacity: 1;
+}
+
+#nav-expand-btn>div:nth-child(1) {
+    top: 4px;
+    left: 4px;
+}
+
+#nav-expand-btn>div:nth-child(2) {
+    top: 10.5px;
+    transition-duration: 0.5s;
+    left: 4px;
+}
+
+#nav-expand-btn>div:nth-child(3) {
+    bottom: 4px;
+    left: 4px;
+}
+
+/* Extra nov for mobile */
+#mobileNavExtraCard {
+    /* background-color: red; */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 0px;
+    overflow: hidden;
+    transition: 1s;
+    z-index: 1;
+}
+
+#mobileNavExtraCard>ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(10, 10, 10);
+    margin-top: 5rem;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+#mobileNavExtraCard>ol>li {
+    list-style: none;
+    background-color: transparent;
+    width: 100%;
+    margin: 4px auto;
+    height: auto;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#mobileNavExtraCard>ol>li>p {
+    padding-left: 10px;
+}
+
+#mobileNavExtraCard>ol>li>a {
+    padding: 10px 0;
+    padding-left: 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#mobileNavExtraCard>ol>li>a:active {
+    background-color: rgba(255, 255, 255, 0.433);
+}
+
+
+
+.navLinksContainers>a {
+    color: white;
+    font-size: var(--button-text);
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-family: "fira Code", monospace;
+    margin: 0px 5px;
+    position: relative;
+}
+
+.navLinksContainers>a:hover {
+    background-color: var(--nav-button-hover);
+}
+
+.extraNavCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    /* top: 3.4rem; */
+    top: 2rem;
+    display: none;
+    padding-top: 1.5rem;
+    z-index: 12;
+}
+
+.linksInExtraCards>a {
+    font-size: var(--paragraph);
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.linksInExtraCards>a:hover {
+    background-color: rgba(68, 68, 68, 0.968);
+}
+
+.linksInExtraCards {
+    background-color: rgb(105, 105, 105);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#socialExtra {
+    left: 25%;
+}
+
+#linkedin-logo-nav {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    background-image: url(/files/linkedin-logo.png);
+    background-position: center;
+    background-size: 115%;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-color: white;
+}
+
+#instagram-logo-nav {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    background-image: url(/files/instagram-logo.jpg);
+    background-position: center;
+    background-size: 110%;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+#github-logo-nav {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    background-image: url(/files/github-logo.png);
+    background-position: center;
+    background-size: 110%;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+#websiteLogoNaming {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#websiteLogo {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-image: url(/files/websiteLogo.png);
+    background-position: center;
+    background-size: 100%;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+
+#websiteLogoNaming>h1 {
+    color: white;
+    font-size: var(--h1);
+    margin-left: 4px;
+    margin-top: 2px;
+}
+
+/* Section Styling Started Here  */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#welcomePart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: -5rem;
+    height: 100vh;
+}
+
+#welcomePart>div {
+    width: 90%;
+    max-width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#welcomePart>div>h2>span {
+    font-size: var(--h);
+}
+
+#welcomePart::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    content: '';
+    top: 0;
+    background-image: url(/files/code-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+}
+
+#welcomePart>div>h2 {
+    width: 100%;
+    text-align: center;
+    font-size: var(--h2);
+}
+
+#welcomePart>div>p {
+    width: 90%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: var(--paragraph);
+}
+
+
+
+
+/* Footer side is here */
+footer {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: var(--footer-text-size);
+}
+
+#important-links-footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid rgb(146, 146, 146);
+    margin-bottom: 10px;
+    font-size: var(--footer-text-size);
+}
+
+#important-links-footer-container>a {
+    margin: 0 15px;
+    font-size: var(--footer-text-size);
+}
+
+
+
+/* Making responsive design */
+@media screen and (max-width:672px) {
+
+    :root {
+        --body-bg: rgb(0, 35, 44);
+        --paragraph: 15px;
+        --button-text: 15px;
+        --h1: 26px;
+        --h2: 23px;
+        --h3: 20px;
+        --h4: 18px;
+        --nav-non-transparent-bg: rgb(2 19 26);
+        --nav-transparent-bg: rgba(0, 0, 0, 0.436);
+        --nav-button-hover: rgb(119, 119, 119);
+        --teal-text-color: rgb(0, 238, 238);
+        --footer-text-size: 12px;
+    }
+
+    .navLinksContainers {
+        display: none;
+    }
+
+    #nav-expand-btn {
+        display: block;
+    }
+
+    #important-links-footer-container {
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+
+    #welcomePart>div>p {
+        width: 100%;
+
+    }
+
+    #important-links-footer-container>a {
+        margin: 0 10px;
+    }
+}
