@@ -129,7 +129,7 @@ nav {
     background-color: rgb(10, 10, 10);
     margin-top: 5rem;
     flex-direction: column;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 #mobileNavExtraCard>ol>li {
@@ -406,4 +406,5 @@ footer {
     #important-links-footer-container>a {
         margin: 0 10px;
     }
+
 }
