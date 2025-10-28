@@ -3,160 +3,97 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style/style.css">
-    <title>InteLinks</title>
+    <title>Abhinix - Sharing what I make</title>
+    <link rel="shortcut icon" href="files/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
 </head>
 
 <body>
-    <!--NavBar Top-->
     <nav>
-        <div id="UpsideNavBarLinks">
-            <a class="ClickEve topNavLinks" href="https://google.com" target="_BLANK">
-                <img src="Files/Google_Search.png" class="navLinksImgs" alt="Can't Load">
-                <p class="navTopLinksName">Google</p>
-            </a>
-            <a class="ClickEve topNavLinks" href="https://gmail.com" target="_BLANK">
-                <img src="Files/Gmail.png" class="navLinksImgs" alt="Can't Load">
-                <p class="navTopLinksName">Gmail</p>
-            </a>
-            <a class="ClickEve topNavLinks" href="https://web.whatsapp.com" target="_BLANK">
-                <img src="Files/WhatsApp.png" class="navLinksImgs" alt="Can't Load">
-                <p class="navTopLinksName">WhatsApp</p>
-            </a>
-            <a class="ClickEve topNavLinks" href="https://youtube.com" target="_BLANK">
-                <img src="Files/YouTube.png" class="navLinksImgs" alt="Can't Load">
-                <p class="navTopLinksName">YouTube</p>
-            </a>
-            <a class="ClickEve topNavLinks" href="https://studio.youtube.com" target="_BLANK">
-                <img src="Files/YTStudio.png" class="navLinksImgs" alt="Can't Load">
-                <p class="navTopLinksName">YT Studio</p>
-            </a>
-            <div id="CstmURLInP">
-                <input type="text" placeholder="Name" class="InputTextForURL" id="UserCusUrlnameIn">
-                <input type="text" placeholder="Link" class="InputTextForURL" id="UserCusUrlIn">
-                <button id="FinalAddBTN">Add</button>
+        <div class="navLinksContainers" id="navLinks1Container">
+            <a href="" class="navLinksAnchor">Home</a>
+            <a href="" id="socialAnchorNav" class="navLinksAnchor">Social</a>
+            <!-- Extra Nav Cards for PC users -->
+            <div class="extraNavCards" id="socialExtra">
+                <div class="linksInExtraCards">
+                    <a target="_blank" href="https://linkedin.com">
+                        <div id="linkedin-logo-nav"></div>LinkedIn
+                    </a>
+                    <a target="_blank" href="https://instagram.com/a8h1n17">
+                        <div id="instagram-logo-nav"></div>Instagram
+                    </a>
+                    <a target="_blank" href="https://github.com/abhinix">
+                        <div id="github-logo-nav"></div>GitHub
+                    </a>
+                </div>
             </div>
-            <button class="ClickEve moreOptInNavTopBTN">
-                <div class="Lines"></div>
-                <div class="Lines"></div>
-            </button>
+
         </div>
-        <!-- Bottom Side Container -->
-        <div id="navBottom">
-            <div class="ClickEve topNavLinks topBottomNavLinks">
-                <p class="navTopLinksName navTopBottomLinksName">Add URL</p>
-            </div>
-            <div class="ClickEve topNavLinks topBottomNavLinks">
-                <p class="navTopLinksName navTopBottomLinksName">Remove Links</p>
-            </div>
-            <a class="ClickEve topNavLinks topBottomNavLinks" href="" target="_BLANK">
-                <p class="navTopLinksName navTopBottomLinksName">Follow us</p>
-            </a>
+        <div style="user-select: none; cursor: default;" id="websiteLogoNaming">
+            <div id="websiteLogo"></div>
+            <h1>bhinix</h1>
         </div>
+        <div class="navLinksContainers" id="navLinks2Container">
+            <a href="" class="navLinksAnchor">Stuff</a>
+            <a href="" target="_blank" class="navLinksAnchor">Experience</a>
+        </div>
+
+        <button id="nav-expand-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+
+        <div id="mobileNavExtraCard">
+            <ol>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <p style="margin-bottom: 5px;"><strong>Social Profiles</strong></p>
+                </li>
+                <li>
+                    <a style="padding-left: 20px;" target="_blank" href="https://www.linkedin.com/in/abhinit-4a9919266">
+                        <div id="linkedin-logo-nav"></div>LinkedIn
+                    </a>
+                </li>
+                <li><a style="padding-left: 20px;" target="_blank" href="https://instagram.com/a8h1n17">
+                        <div id="instagram-logo-nav"></div>Instagram
+                    </a>
+                </li>
+                <li> <a style="padding-left: 20px;" target="_blank" href="https://github.com/abhinix">
+                        <div id="github-logo-nav"></div>GitHub
+                    </a></li>
+                <li><a href="#">Stuff</a></li>
+                <li><a href="#">Experiences</a></li>
+            </ol>
+        </div>
+
     </nav>
-    <!-- Search Here  -->
-    <div id="searchCont">
-        <button id="GoogleSltctBTN" class="SearchSwtBTN">Google</button>
-        <button id="YouTubeSltctBTN" class="SearchSwtBTN">YouTube</button>
-        <input type="search" placeholder="Direct Search" id="MainGYTSearch">
-        <input type="submit" id="SearchBTN" value="Search">
-    </div>
 
-    <!-- Links With Icons Section  -->
-    <div id="LlinksWIconMParent">
-        <div id="IconLinkScrn">
-            <div id="LinkPageContnr">
-                <div class="LinkContnr1">
-                    <a href="" class="CLIWP" target="_BLANK"><img src="" class="Linkimgs" alt="Can't Load">
-                        <p class="CLIWPNTxt"></p>
-                    </a>
-                    <a href="" class="CLIWP" target="_BLANK"><img src="" class="Linkimgs" alt="Can't Load">
-                        <p class="CLIWPNTxt"></p>
-                    </a>
-                    <a href="" class="CLIWP" target="_BLANK"><img src="" class="Linkimgs" alt="Can't Load">
-                        <p class="CLIWPNTxt"></p>
-                    </a>
-                    <a href="" class="CLIWP" target="_BLANK"><img src="" class="Linkimgs" alt="Can't Load">
-                        <p class="CLIWPNTxt"></p>
-                    </a>
-                    <a href="" class="CLIWP" target="_BLANK"><img src="" class="Linkimgs" alt="Can't Load">
-                        <p class="CLIWPNTxt"></p>
-                    </a>
-                    <a href="" class="CLIWP" target="_BLANK"><img src="" class="Linkimgs" alt="Can't Load">
-                        <p class="CLIWPNTxt"></p>
-                    </a>
-                    <a href="" class="CLIWP" target="_BLANK"><img src="" class="Linkimgs" alt="Can't Load">
-                        <p class="CLIWPNTxt"></p>
-                    </a>
-                    <a href="" class="CLIWP" target="_BLANK"><img src="" class="Linkimgs" alt="Can't Load">
-                        <p class="CLIWPNTxt"></p>
-                    </a>
-                    <a href="" class="CLIWP" target="_BLANK"><img src="" class="Linkimgs" alt="Can't Load">
-                        <p class="CLIWPNTxt"></p>
-                    </a>
-                    <a href="" class="CLIWP" target="_BLANK"><img src="" class="Linkimgs" alt="Can't Load">
-                        <p class="CLIWPNTxt"></p>
-                    </a>
-                    <a href="" class="CLIWP" target="_BLANK"><img src="" class="Linkimgs" alt="Can't Load">
-                        <p class="CLIWPNTxt"></p>
-                    </a>
-                    <a href="" class="CLIWP" target="_BLANK"><img src="" class="Linkimgs" alt="Can't Load">
-                        <p class="CLIWPNTxt"></p>
-                    </a>
-                    <a href="" class="CLIWP" target="_BLANK"><img src="" class="Linkimgs" alt="Can't Load">
-                        <p class="CLIWPNTxt"></p>
-                    </a>
-                    <a href="" class="CLIWP" target="_BLANK"><img src="" class="Linkimgs" alt="Can't Load">
-                        <p class="CLIWPNTxt"></p>
-                    </a>
-                    <a href="" class="CLIWP" target="_BLANK"><img src="" class="Linkimgs" alt="Can't Load">
-                        <p class="CLIWPNTxt"></p>
-                    </a>
-                    <a href="" class="CLIWP" target="_BLANK"><img src="" class="Linkimgs" alt="Can't Load">
-                        <p class="CLIWPNTxt"></p>
-                    </a>
-                    <a href="" class="CLIWP" target="_BLANK"><img src="" class="Linkimgs" alt="Can't Load">
-                        <p class="CLIWPNTxt"></p>
-                    </a>
-                    <a href="" class="CLIWP" target="_BLANK"><img src="" class="Linkimgs" alt="Can't Load">
-                        <p class="CLIWPNTxt"></p>
-                    </a>
-                </div>
-                <div id="LinkContnr">
-                    <div id="Title1">Custom URLs Here</div>
-                    <div id="MainCusCont"></div>
-                </div>
-            </div>
-            <div id="WinStcheBTNPa">
-                <div class="WinSwtchrBTNs"></div>
-                <div class="WinSwtchrBTNs"></div>
+    <section>
+        <div id="welcomePart">
+            <div>
+                <h2>Hello world, I'm <span style="color: rgb(0, 238, 238);">Abhinit</span></h2>
+                <p>A computer enthusiast who loves experimenting with technology, design, and the web.
+                    Most of my time goes into building web projects, but I also explore different areas of computing.
+                </p>
             </div>
         </div>
-        <div id="IconLinkRight">
-            <a target="_BLANK" href="https://maps.google.com" class="RightSideLinks"><img src="Files/Maps.png" alt="Can't Load" class="Linkimgs">
-                <p class="CLIWPNTxt">Maps</p>
-            </a>
-            <a target="_BLANK" href="https://yahoo.com" class="RightSideLinks"><img src="Files/Yahoo.png" alt="Can't Load" class="Linkimgs">
-                <p class="CLIWPNTxt">Yahoo</p>
-            </a>
-            <a target="_BLANK" href="https://speedtest.net" class="RightSideLinks"><img src="Files/SpeedTest.png" alt="Can't Load" class="Linkimgs">
-                <p class="CLIWPNTxt">SpeedTest</p>
-            </a>
-            <a target="_BLANK" href="https://microsoft.com" class="RightSideLinks"><img src="Files/Microsoft.png" alt="Can't Load" class="Linkimgs">
-                <p class="CLIWPNTxt">Microsoft</p>
-            </a>
-            <a target="_BLANK" href="https://www.primevideo.com/" class="RightSideLinks"><img src="Files/Prime.png" alt="Can't Load" class="Linkimgs">
-                <p class="CLIWPNTxt">Prime</p>
-            </a>
-            <a target="_BLANK" href="https://www.netflix.com/" class="RightSideLinks"><img src="Files/Netflix.png" alt="Can't Load" class="Linkimgs">
-                <p class="CLIWPNTxt">Netflix</p>
-            </a>
-        </div>
-    </div>
 
-    <script src="Script/script.js"></script>
+    </section>
+
+    <footer>
+        <div id="important-links-footer-container">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & conditions</a>
+        </div>
+        Developed & Designed by Abhinit with ❤️
+    </footer>
+
 </body>
+<script src="/script/main.js"></script>
 
 </html>
