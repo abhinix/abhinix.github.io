@@ -32,7 +32,8 @@
     padding: 8px 10px;
     border-radius: 5px;
     /* background-color: rgb(2, 126, 118); */
+    /* text-decoration: underline; */
 }
 .collection-links-hyper:hover{
-    background-color: rgba(15, 168, 168, 0.679);
+    background-color: rgba(15, 168, 168, 0.433);
 }
