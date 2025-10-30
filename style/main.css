@@ -28,7 +28,6 @@
     position: relative;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
-    /* for iOS Safari & Chrome Android */
     font-size: var(--paragraph);
 }
 
@@ -129,7 +128,7 @@ nav {
     background-color: rgb(10, 10, 10);
     margin-top: 5rem;
     flex-direction: column;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 #mobileNavExtraCard>ol>li {
@@ -406,5 +405,4 @@ footer {
     #important-links-footer-container>a {
         margin: 0 10px;
     }
-
 }

@@ -37,5 +37,4 @@ nav_expand_btn.addEventListener("click", () => {
         nav_expand_btn.children[2].style.transform = "rotate(0)translateX(0)translateY(0)";
     }
 
-
 })
