@@ -97,10 +97,28 @@
 
 .skill-tags {
     background-color: rgba(255, 255, 255, 0.271);
-    border: 5px ;
+    border: 5px;
     padding: 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
+}
+
+
+@media screen and (max-width:672px) {
+    .work-experience-card-container {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .skills-container{
+        padding-left: 0;
+    }
+.skill-tags{
+    padding: 5px 10px;
+}
+.word-exp-heading{
+    padding-left: 1rem;
+}
 }
