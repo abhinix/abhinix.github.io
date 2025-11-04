@@ -18,6 +18,29 @@
     --footer-text-size: 14px;
 }
 
+/* Universal Classes */
+.h1{
+    font-size: var(--h1);
+}
+.h2{
+    font-size: var(--h2);
+}
+.h3{
+    font-size: var(--h3);
+}
+.h4{
+    font-size: var(--h4);
+}
+.p{
+    font-size: var(--paragraph);
+}
+.hr{
+    width: 40%;
+    height: 2px;
+    margin: 20px 0;
+    background-color: white;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -345,8 +368,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     flex-direction: column;
+    text-align: center;
     font-size: var(--footer-text-size);
 }
 
