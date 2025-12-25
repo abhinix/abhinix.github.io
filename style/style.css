@@ -1,0 +1,22 @@
+/* here will be the css code for the homepage content styling */
+
+.academic-sharing-link-homepage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    margin: 2rem auto;
+}
+.academic-sharing-link-homepage>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+#academin-sharing-link-anchr{
+    background-color: rgb(64, 107, 0);
+    margin-top: 1rem;
+}

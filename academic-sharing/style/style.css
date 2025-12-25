@@ -1,0 +1,47 @@
+/* This style is for the webpage Academic Sharing */
+
+.standardCardsContainer{
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 120rem;
+    margin: auto;
+    margin-top: 2rem;
+    /* background-color: red; */
+}
+
+.standardClassesAcademic{
+    margin: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgb(128 128 128 / 33%);
+    border-radius: 5px;
+    flex-direction: column;
+    
+}
+
+.standardHeadings{
+    border-radius: 5px;
+    border-bottom: 2px solid rgb(177, 177, 177);
+    background-color: hsl(192.27deg 100% 8.63%);
+    padding: 0.5rem 1rem;
+}
+
+.contentlinksContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem 0rem;
+}
+.contentlinksContainer>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
