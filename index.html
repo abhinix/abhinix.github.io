@@ -1,127 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhinix - Sharing what I make</title>
-    <link rel="shortcut icon" href="files/favicon.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="/stuff/style/stuff.css">
-    <meta name="google-site-verification" content="ZFPIBlKubn5ORZme2Rn_DE0a7gU6S8g6gzxwxgtqqMc" />
-    <meta property="og:site_name" content="Abhinix" />
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Abhinix",
-  "url": "https://abhinix.github.io/",
-  "alternateName": ["Abhinit Portfolio", "Abhinix Dev"]
-}
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting to Abhinix...</title>
+
+  <!-- Instant Meta Refresh -->
+  <meta http-equiv="refresh" content="0; url=https://abhinix.vercel.app">
+  <link rel="canonical" href="https://abhinix.vercel.app">
+
+  <!-- Immediate JavaScript Redirect -->
+  <script>
+    window.location.replace("https://abhinix.vercel.app");
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #00171f;
+      color: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    .spinner {
+      width: 42px;
+      height: 42px;
+      border: 3px solid rgba(0, 238, 238, 0.15);
+      border-top-color: #00eeee;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin-bottom: 1.25rem;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    h1 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+    }
+    a {
+      color: #00eeee;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 18px;
+      border: 1px solid rgba(0, 238, 238, 0.4);
+      border-radius: 8px;
+      transition: all 0.2s;
+    }
+    a:hover {
+      background: rgba(0, 238, 238, 0.1);
+      border-color: #00eeee;
+    }
+  </style>
 </head>
-
 <body>
-    <nav>
-        <div class="navLinksContainers" id="navLinks1Container">
-            <a href="/" class="navLinksAnchor">Home</a>
-            <a style="cursor: pointer;" id="socialAnchorNav" class="navLinksAnchor">Social</a>
-            <!-- Extra Nav Cards for PC users -->
-            <div class="extraNavCards" id="socialExtra">
-                <div class="linksInExtraCards">
-                    <a target="_blank" href="https://www.linkedin.com/in/a8h1n17">
-                        <div id="linkedin-logo-nav"></div>LinkedIn
-                    </a>
-                    <a target="_blank" href="https://instagram.com/a8h1n17">
-                        <div id="instagram-logo-nav"></div>Instagram
-                    </a>
-                    <a target="_blank" href="https://github.com/abhinix">
-                        <div id="github-logo-nav"></div>GitHub
-                    </a>
-                </div>
-            </div>
-
-        </div>
-        <a href="/">
-            <div style="user-select: none;" id="websiteLogoNaming">
-                <div id="websiteLogo"></div>
-                <h1>Abhinix</h1>
-            </div>
-        </a>
-        <div class="navLinksContainers" id="navLinks2Container">
-            <a href="/stuff/" class="navLinksAnchor">Stuff</a>
-            <a href="experience/" class="navLinksAnchor">Experience</a>
-        </div>
-
-        <button id="nav-expand-btn">
-            <div></div>
-            <div></div>
-            <div></div>
-        </button>
-
-        <div id="mobileNavExtraCard">
-            <ol>
-                <li><a href="/">Home</a></li>
-                <li>
-                    <p style="margin-bottom: 5px;"><strong>Social Profiles</strong></p>
-                </li>
-                <li>
-                    <a style="padding-left: 20px;" target="_blank" href="https://www.linkedin.com/in/a8h1n17">
-                        <div id="linkedin-logo-nav"></div>LinkedIn
-                    </a>
-                </li>
-                <li><a style="padding-left: 20px;" target="_blank" href="https://instagram.com/a8h1n17">
-                        <div id="instagram-logo-nav"></div>Instagram
-                    </a>
-                </li>
-                <li> <a style="padding-left: 20px;" target="_blank" href="https://github.com/abhinix">
-                        <div id="github-logo-nav"></div>GitHub
-                    </a></li>
-                <li><a href="/stuff/">Stuff</a></li>
-                <li><a href="/experience/">Experiences</a></li>
-            </ol>
-        </div>
-
-    </nav>
-
-    <section>
-        <div id="welcomePart">
-            <div>
-                <h2>Hello world, I'm <span style="color: rgb(0, 238, 238);">Abhinit</span></h2>
-                <!-- <p>A computer enthusiast who loves experimenting with technology, design, and the web.
-                    Most of my time goes into building web projects, but I also explore different areas of computing.
-                </p> -->
-                <p>A learner and knowledge enthusiast sharing academic materials, study resources, and personal learning
-                    experiences to make learning simpler and more accessible.</p>
-            </div>
-        </div>
-        <div class="academic-sharing-link-homepage">
-            <div>
-                <h2 class="h4">Academic Sharing</h2><br>
-                <p class="p">A collection of academic notes, study materials, and project files from my academic
-                    journey, shared to make learning simpler and more accessible.</p>
-            </div>
-            <a id="academin-sharing-link-anchr" class="collection-links-hyper" href="/academic-sharing">Click here</a>
-        </div>
-    </section>
-    <br>
-    <footer>
-        <div id="important-links-footer-container">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & conditions</a>
-        </div>
-        Developed & Designed by Abhinit with ❤️
-        <br>
-        <br>
-        © 2026 Abhinix. All rights reserved.
-    </footer>
-
+  <div class="spinner"></div>
+  <h1>Redirecting to Abhinix</h1>
+  <p>Please wait, you are being redirected to the new website...</p>
+  <a href="https://abhinix.vercel.app">Click here if you are not redirected automatically</a>
 </body>
-<script src="/script/main.js"></script>
-
-
 </html>
